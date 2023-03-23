@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("../partials/head.ejs") %>
+  <link rel="stylesheet" type="text/css" href="/css/view.css" media="all">    
+  <title>View Passwords</title>
+</head>
+
+<body>
+  <%- include("../partials/navUser.ejs"); %>
+
+    
+  <form action="/<%= passView._id %>?_method=GET" method="GET">
+    <div class="container-1">
+
+        
+            <div class="first">
+              <h1>YOUR CREDENTIALS</h1>
+            </div>
+
+            <div class="second">
+              <p><%- passView.title %></p>
+              <p><%- passView.body %></p>   
+              <span><a href="/myPass" class="btn btn-warning">Back</a></span>
+            </div>
+        
+
+    </div>
+  </form>
+
+</body>
+
+</html>

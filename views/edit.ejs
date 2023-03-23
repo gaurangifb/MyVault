@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("../partials/head.ejs") %>
+    <link rel="stylesheet" type="text/css" href="/css/edit.css" media="all">
+    <title>Updating Credentials</title>
+</head>
+
+<body>
+  <%- include("../partials/navUser.ejs"); %>
+
+   
+    <form action="/<%= passEdit._id %>?_method=PUT" method="POST">
+      <div class="container-1">
+      
+          <div class="head-1">
+            <h1>Update your credentials</h1>
+          </div>
+
+          <div class="inputs"> 
+            <input type="text" value="<%= passEdit.title %>" class="form-control input-1" id="exampleFormControlInput1" name="title"
+              placeholder="Type in here...">
+          
+            <textarea class=""  id="editor1" name="body" rows="1"><%= passEdit.body %></textarea>
+          </div>
+
+        <div class='buttons'>
+          <span><input type="submit" name="save" value="Update" class="btn btn-success"></span>
+          <span><a href="/myPass" class="btn btn-warning">Cancel</a></span>
+        </div>
+
+    </div>
+    </form>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.16.1/ckeditor.js" integrity="sha512-2nFxKVmFuBhAR45DBnAANBjtxzf7z0m6wRU7NOquxibA6efrQpUtdjFT4wzqewqTI3/cCNbBzJNUtu1NxjFiKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>  //editor 
+      CKEDITOR.replace('body', {
+          plugins: 'wysiwygarea, toolbar, basicstyles, link' 
+      })
+
+      CKEDITOR.replace('editor1');
+    CKEDITOR.config.width="100%";
+    CKEDITOR.config.height="100px"      
+    </script>
+    
+  </body>
+
+</html>

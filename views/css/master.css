@@ -1,0 +1,231 @@
+.navbar {
+    padding: 0 !important;
+    height: 72px;
+}	
+
+.nav-vault {           /******MY VAULT BRAND NAME**********/
+    margin-top: 6px;
+    margin-left: 3rem;
+    font-size: 26px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.nav-vault::after{
+    content:"";
+    height: 2px;
+    width:0%;
+    background-color: black;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.nav-vault:hover::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    display: block;
+}
+
+.create {
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 1rem;
+    padding: 2px 2px;
+    border-style: solid;
+    border-radius: 5px 5px;
+}
+
+.login {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 10px;
+}
+
+.logout {
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 1rem;
+    padding: 10px 8px;
+}
+
+.alert-success{
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 32rem;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.alert-danger{
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 28rem;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*********FOR DESKTOP************/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    #container {
+        display: flex;
+        height: 400px;
+        width: 750px;
+        margin: auto;
+        margin-top: 120px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    }
+    
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    
+    .left img{
+        margin: 6rem;
+        margin-left: 4.5rem;
+        height: 160px;
+        object-fit: cover;
+    }
+    
+     .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #F2F6FF;
+        width: 50%;
+    }
+    
+    .right h2 {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        border-bottom: 2px solid black;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .form {
+        margin: 3rem 2rem;
+    }
+}
+
+
+
+/*********
+.right a {
+    padding: 2px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    color: whitesmoke;
+}
+
+#sign {                  
+    padding: 5px;
+    color: black;
+    font-size: 20px;
+}
+
+**********/
+
+/*******FOR MOBILE DEVICES***********/
+@media (max-width: 515px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 400px;
+        margin: auto;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    
+    .left img{
+        margin-top: 3rem;
+        margin-right: 1rem;
+        height: 150px;
+    }
+    
+     .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #F2F6FF;
+        height: 50%;
+    }
+
+    .right h2 {
+        font-size: 17px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        border-bottom: 2px solid black;
+    }
+    
+    .form {
+        margin-top: 3rem;
+    }
+}
+
+/*******FOR TABLET DEVICES***********/
+@media (min-width: 516px) and (max-width: 1024px) {
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 500px;
+        margin: auto;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    
+    .left img{
+        margin-top: 3rem;
+        margin-right: 1rem;
+        height: 180px;
+    }
+    
+     .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #F2F6FF;
+        height: 50%;
+    }
+
+    .right h2 {
+        font-size: 17px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        border-bottom: 2px solid black;
+    }
+    
+    .form {
+        margin-top: 3rem;
+    }
+}
+

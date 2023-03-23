@@ -1,0 +1,199 @@
+.navbar {
+    padding: 0 !important;
+    height: 72px;
+}	
+
+.nav-vault {           /******MY VAULT BRAND NAME**********/
+    margin-top: 6px;
+    margin-left: 3rem;
+    font-size: 23px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.nav-vault::after{
+    content:"";
+    height: 2px;
+    width:0%;
+    background-color: black;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.nav-vault:hover::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    display: block;
+}
+
+.create{
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 5rem;
+    padding: 5px 8px;
+}
+
+.my{
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 4rem;
+    padding: 5px 8px;
+}
+
+.logout{
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 3rem;
+    padding: 5px 8px;
+}
+
+#alert{
+    position: fixed;
+    margin-top: 4rem;
+}
+
+/*****************************************/
+
+
+
+/*********FOR DESKTOP************/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .container-1    {
+        display: flex;
+        flex-direction: column;
+        height: 430px;
+        width: 700px;
+        margin: auto;
+        margin-top: 7rem;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    }
+    
+    .head-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 3rem 1rem 3rem; 
+    }
+    
+    .head-1 h1{
+        font-size: 35px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        border-bottom: 2px solid black;
+    }
+    
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+    }
+    
+    .inputs .input-1 {
+        margin-top: 10px;
+        margin-bottom: 28px;
+    }
+    
+    .buttons {
+        margin-top: 15px;
+        margin-left: 4.3rem;
+    }
+}
+
+/*******FOR MOBILE DEVICES***********/
+@media (max-width: 515px) {
+
+    .container-1    {
+        display: flex;
+        flex-direction: column;
+        height: 480px;
+        width: 420px;
+        margin: auto;
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    }
+    
+    .head-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    
+    .head-1 h1{
+        font-size: 28px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        border-bottom: 2px solid black;
+    }
+    
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    
+    .inputs .input-1 {
+        margin-top: 10px;
+        margin-bottom: 28px;
+    }
+    
+    .buttons {
+        margin-top: 15px;
+        margin-left: 2.5rem;
+    }
+}
+
+/*******FOR TABLET DEVICES***********/
+@media (min-width: 516px) and (max-width: 1024px) {
+    .container-1    {
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        width: 520px;
+        margin: auto;
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    }
+    
+    .head-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    
+    .head-1 h1{
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        border-bottom: 2px solid black;
+    }
+    
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    
+    .inputs .input-1 {
+        margin-top: 10px;
+        margin-bottom: 28px;
+    }
+    
+    .buttons {
+        margin-top: 15px;
+        margin-left: 2.5rem;
+    }
+}
+
+
+
+

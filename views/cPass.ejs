@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("../partials/head.ejs") %>
+    <link rel="stylesheet" href="./css/cPass.css">
+    <title>Create Password</title>
+</head>
+
+<body>
+  <%- include("../partials/navUser.ejs"); %>
+
+    <form action="/cPass" method="POST">
+      <div class="container-1">
+
+       
+          <div class="head-1">
+            <h1 class="mt-2">CREATE YOUR CREDENTIALS</h1>
+          </div>
+
+
+          <div class="inputs"> 
+            <input type="text" class="form-control input-1" name="title" id="exampleFormControlInput1"
+              placeholder="Title/Category">
+
+            <textarea class="" id='editor1' name="body" rows="6" placeholder="Type the content here!"></textarea>
+          </div>
+
+          <div class='buttons'>
+            <span><input type="submit" name="save" value="Save" class="btn btn-success"></span>
+            <span><a href="/myPass" class="btn btn-warning">Cancel</a></span>
+         </div>
+       
+      
+      </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.16.1/ckeditor.js" integrity="sha512-2nFxKVmFuBhAR45DBnAANBjtxzf7z0m6wRU7NOquxibA6efrQpUtdjFT4wzqewqTI3/cCNbBzJNUtu1NxjFiKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>  //editor 
+      CKEDITOR.replace('body', {
+          plugins: 'wysiwygarea, toolbar, basicstyles, link' 
+      })
+
+      CKEDITOR.replace('editor1');
+    CKEDITOR.config.width="100%";
+    CKEDITOR.config.height="130x"
+
+    </script>
+
+    
+  </body>
+
+</html>

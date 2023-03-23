@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+.alert{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 32rem;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    padding: 0 !important;
+    height: 72px;
+}	
+
+.nav-vault {           /******MY VAULT BRAND NAME**********/
+    margin-top: 6px;
+    margin-left: 3rem;
+    font-size: 23px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.nav-vault::after{
+    content:"";
+    height: 2px;
+    width:0%;
+    background-color: black;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.nav-vault:hover::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    display: block;
+}
+
+.create{
+    font-size: 19px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 5rem;
+    padding: 5px 8px;
+}
+
+.my{
+    font-size: 19px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 4rem;
+    padding: 5px 8px;
+}
+
+.logout{
+    font-size: 19px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 3rem;
+    padding: 5px 8px;
+}
+
+
+/**********************************/
+
+.container-1{
+   margin-top: 6rem;
+   margin-left: 3rem;
+   margin-right: 3rem;
+}
+
+.search-box{
+    margin-bottom: 2rem;
+}
+
+.search-box button {
+    margin-left: 1rem;
+}
+
+
+    /* Grow Shadow */
+.hvr-grow-shadow {
+    
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+

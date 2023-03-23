@@ -1,0 +1,510 @@
+.navbar {
+    padding: 0 !important;
+    height: 72px;
+}	
+
+.nav-vault {           /******MY VAULT BRAND NAME**********/
+    margin-top: 6px;
+    margin-left: 3rem;
+    font-size: 23px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.nav-vault::after{
+    content:"";
+    height: 2px;
+    width:0%;
+    background-color: black;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.nav-vault:hover::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    display: block;
+}
+
+.create{
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 5rem;
+    padding: 5px 8px;
+}
+
+.my{
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 4rem;
+    padding: 5px 8px;
+}
+
+.logout{
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 3rem;
+    padding: 5px 8px;
+}
+
+.alert{
+    position: absolute;
+    z-index: 9;
+    margin-top: 80px;
+    margin-left: 32rem;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+}
+
+/****************FOOTER*********************/
+
+.footer{
+    width: 100%;
+    height: 11rem;
+    margin-top: 36rem;
+    background-color: black;
+}
+
+.footer ul{
+    
+    padding: 30px;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    opacity: 0.8;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+/*********FOR DESKTOP************/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .first{
+        display: flex;
+        flex-direction: row;
+        height: 80rem;
+        margin-top: 6rem;
+    }
+    
+    .left-1{
+        display: flex;
+        flex-direction: column;
+        width: 50%
+    }
+    
+    .left-1 h1{
+        font-size: 35px;
+        text-align: left;
+        font-family: 'Comfortaa', cursive;
+        margin: 7.5rem 1rem 1rem 4rem;
+    }
+    
+    .left-1 h2{
+        font-size: 27px;
+        text-align: left;
+        font-family: 'Comfortaa', cursive;
+        margin: 0rem 2rem 1rem 4rem;
+    }
+    
+    .left-1 a{
+        font-size: 18px;
+        font-family: 'Comfortaa', cursive;
+        padding: 10px;
+        border-style: solid;
+        border-radius: 5px 5px;
+        margin: 0rem 2rem 1rem 4rem;
+        text-decoration: none;
+    }
+    
+    .right-1{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+    
+    .right-1 img{
+        margin: 3rem 2rem 0rem 6rem;
+        height: 350px;
+        object-fit: cover;
+    }
+    
+    
+    /*******FIRST DIV ENDSS************/
+    
+    .second{
+        display: flex;
+        flex-direction: row;
+        height: 20rem;
+    }
+    
+    .left-2{
+        display: flex;
+        width: 50%
+    }
+    
+    .left-2 img{
+        margin-top: 4rem;
+        margin-left: 8rem;
+        height: 25rem;
+        object-fit: cover;
+    }
+    
+    .right-2{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+    
+    .right-2 h2{
+        font-size: 2rem;
+        text-align: left;
+        font-family: 'Comfortaa', cursive;
+        margin: 11rem 2rem 0rem 1rem;
+    }
+    
+    .right-2 a{
+        font-size: 18px;
+        font-family: 'Comfortaa', cursive;
+        padding: 10px;
+        border-style: solid;
+        border-radius: 5px 5px;
+        margin-top: 0.5rem;
+        margin-right: 25rem;
+        text-decoration: none;
+    }
+    
+}
+
+
+
+/*******FOR MOBILE DEVICES***********/
+@media (max-width: 515px) {
+
+    .first{
+        display: flex;
+        flex-direction: column;
+        height: 80rem;
+        width: 100%;
+        margin-top: 6rem;
+    }
+    
+    .left-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+    
+    .left-1 h1{
+        font-size: 31px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        margin: 5rem 0rem 1rem 1rem;
+    }
+    
+    .left-1 h2{
+        font-size: 23px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        margin: 0rem 2rem 1rem 2.5rem;
+    }
+    
+    .left-1 a{
+        font-size: 18px;
+        font-family: 'Comfortaa', cursive;
+        padding: 10px;
+        border-style: solid;
+        border-radius: 5px 5px;
+        margin: 10px 2rem 1rem 12rem;
+        text-decoration: none;
+    }
+    
+    .right-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .right-1 img{
+        margin: 4rem 2rem 0rem 2rem;
+        height: 17rem;
+        object-fit: cover;
+    }
+    
+    
+    /*******FIRST DIV ENDSS************/
+    
+    .second{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        margin-top: 80rem;
+    }
+    
+    .left-2{
+        display: flex;
+        width: 100%
+    }
+    
+    .left-2 img{
+        margin-top: -64rem;
+        margin-left: 4rem;
+        height: 20rem;
+        object-fit: cover;
+    }
+    
+    .right-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .right-2 h2{
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        margin: -75rem 2rem 0rem 1rem;
+    }
+    
+    .right-2 a{
+        font-size: 20px;
+        font-family: 'Comfortaa', cursive;
+        padding: 8px;
+        border-style: solid;
+        border-radius: 5px 5px;
+        margin-top: 10px;
+        margin-right: 1rem;
+        text-decoration: none;
+    }
+
+    .footer{
+        width: 100%;
+        height: 14rem;
+        margin-top: 120rem;
+        background-color:black;
+    }
+}
+
+/************FOR TABLETS***************/
+@media (min-width: 516px) and (max-width: 1024px){
+    .first{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        margin-top: 6rem;
+    }
+    
+    .left-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+    
+    .left-1 h1{
+        font-size: 35px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        margin-top: 6rem;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .left-1 h2{
+        font-size: 27px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        margin: 0rem 2rem 1rem 4rem;
+    }
+
+    .left-1 a{
+        font-size: 18px;
+        font-family: 'Comfortaa', cursive;
+        padding: 10px 20px;
+        border-style: solid;
+        border-radius: 5px 5px;
+        margin: 10px 2rem 1rem 25rem;
+        text-decoration: none;
+    }
+    
+    .right-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .right-1 img{
+        margin: 4rem 2rem 0rem 0.5rem;
+        height: 17.5rem;
+        object-fit: cover;
+    }
+    
+    
+    /*******FIRST DIV ENDSS************/
+    
+    .second{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        width: 100%;
+        margin-top: 80rem;
+    }
+    
+    .left-2{
+        display: flex;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .left-2 img{
+        margin-top: -63rem;
+        margin-left: 16rem;
+        height: 20rem;
+        object-fit: cover;
+    }
+    
+    .right-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .right-2 h2{
+        font-size: 30px;
+        text-align: center;
+        margin-left: 7rem;
+        margin-right: 6rem;
+        font-family: 'Comfortaa', cursive;
+        margin-top: -98rem;
+    }
+
+    .right-2 a{
+        font-size: 20px;
+        font-family: 'Comfortaa', cursive;
+        padding: 10px 20px;
+        border-style: solid;
+        border-radius: 5px 5px;
+        margin-top: 10px;
+        margin-right: 1rem;
+        text-decoration: none;
+    }
+
+    /*******SECOND DIV ENDS********/
+
+   .third{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 10rem;
+    }
+    
+    .left-3{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+    
+    .left-3 p{
+        font-size: 29px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        margin-top: -53rem;
+       margin-right: 40px;
+       margin-left: 40px;
+    }
+    
+    .right-3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .right-3{
+        height: 60vh;
+        background: #EEF6FF;
+        position: absolute;
+        right: 0;
+        top: 88rem;
+        border-radius: 90px 20px 0px 90px;
+        justify-content: center;
+    }
+
+    .right-3 img{
+        margin: 1rem 2rem 0rem 1rem;
+        height: 17rem;
+        object-fit: cover;
+    }
+
+    /********THIRD DIV ENDS************/
+
+    .fourth{
+        display: block;
+        height: 100vh;
+        margin-top: -90rem;
+    }
+
+    .fourth img {
+        margin-top: 70rem;
+        margin-left: 17rem;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .fourth p{
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 1rem;
+        margin-bottom: 5rem;
+        font-family: 'Comfortaa', cursive;
+        font-size: 30px;
+    }
+
+    .footer{
+        width: 100%;
+        height: 14rem;
+        margin-top: 110rem;
+        background-color:black;
+    }
+}
+

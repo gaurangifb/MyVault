@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head.ejs") %>
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/myPass.css">    
+    <title>My passwords</title>
+</head>
+
+<body>
+    <%- include("../partials/navUser.ejs"); %>
+
+        <% if(message.length >0) { %>
+            <div class="alert alert-success alert-dismissible fade show animate__animated animate__fadeInDownBig" id="alert" role="alert">
+              <b><%= message %></b>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <% } %>
+        
+        <div class="container-1">
+
+            <div class="search-box">
+                <form action="/myPass" method="GET" class="d-flex ms-auto">
+                    <span><input class="form-control me-2" type="search" placeholder="Search by Title" name="search" id="input" aria-label="Search"></span>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+              
+            <div class="card-box" data-aos="fade-in" data-aos-duration="2000">
+                <div class="row mb-3" data-aos="fade-in">
+                   <% if(cred) { %>       
+                        <% cred.forEach((passw) => { %>          
+                        <div class="col-4 mb-5">
+                            <div class="card hvr-grow-shadow"> 
+                                <div class="card-body">
+                                    <h5 class="card-title"><%- passw.title %></h5>  
+                                   
+                                    <p class="card-text"><%- passw.body %></p>
+                                    <p hidden class="card-text"><%- passw.encryptBody %></p>
+                                  
+                                   <p><%= passw.createdAt.toDateString() %></p>      
+                                    
+                                   <a href="/<%= passw._id %>/viewPass" class="btn btn-success">View</a>
+ 
+                                   <a href="/<%= passw._id %>/edit" class="btn btn-warning">Update</a>
+                                    
+                                    <form action="/<%= passw._id %>?_method=DELETE" method="POST" class="d-inline">
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>        <!--FOREACH ENDED-->
+                    <% } %>     <!--IF ended-->
+                </div>
+            </div>
+           
+        </div>
+            
+            <% if(!cred) { %>    
+            <p>You have got nothing here </p>
+            <% } %>  
+            
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+
+            <script>  //////INCOMPLETE SEARCH BAR
+                const searchPass = () => {
+                    let filter = document.getElementById("input").value.toUpperCase();
+                    let myPass = document.getElementsByClassName("card");
+                    let card = myPass.getElementByTagName("card-title");
+            }
+
+            </script>
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+            
+</body>
+
+</html>
